@@ -1,0 +1,28 @@
+﻿@model UsiCalculator.Models.UsiCalculatorViewModel
+@{
+    ViewBag.Title = "Home Page";
+
+}
+
+@using (Html.BeginForm())
+{
+@Html.LabelFor(x => x.InitialPackages)
+@Html.EditorFor(x => x.InitialPackages)
+@Html.LabelFor(x => x.GoalPackages)
+@Html.EditorFor(x => x.GoalPackages)
+<input type="submit" value="Submit" />
+    }
+
+@{
+    if (Model != null)
+    {
+        <div class="col-sm-12">
+            <p>It will take you @Model.Values.Count() working days to achieve @Model.GoalPackages with a 100% rebuy</p>
+        </div>
+        for (var i = 1; i <= Model.Values.Count(); i++)
+        {
+            <div class="col-sm-6">@i</div>
+            <div class="col-sm-6">@Model.Values.ElementAt(i - 1).TotalPackages</div>
+        }
+    }
+}

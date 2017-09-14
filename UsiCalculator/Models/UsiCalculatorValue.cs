@@ -12,6 +12,14 @@ namespace UsiCalculator.Models
         public int TotalPackages { get; set; }
         public int NumDays { get; set; }
 
+        public decimal DailyEarnings
+        {
+            get
+            {
+                return TotalPackages * 0.01m;
+            }
+        }
+
         public UsiCalculatorValue()
         {
             TotalPackages = 100;

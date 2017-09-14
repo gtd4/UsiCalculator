@@ -80,3 +80,4 @@ C:\Users\9184\Source\Repos\UsiCalculator\UsiCalculator\bin\Microsoft.Owin.Securi
 C:\Users\9184\Source\Repos\UsiCalculator\UsiCalculator\obj\Debug\UsiCalculator.csprojResolveAssemblyReference.cache
 C:\Users\9184\Source\Repos\UsiCalculator\UsiCalculator\obj\Debug\UsiCalculator.dll
 C:\Users\9184\Source\Repos\UsiCalculator\UsiCalculator\obj\Debug\UsiCalculator.pdb
+C:\Users\9184\Source\Repos\UsiCalculator\UsiCalculator\obj\Debug\UsiCalculator.csproj.CoreCompileInputs.cache

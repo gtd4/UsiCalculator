@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-size:24px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -17,8 +18,26 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-input,
+/*input,
 select,
 textarea {
     max-width: 280px;
+}*/
+
+.package-input{
+    height: 60px;
+    border-radius: 10px;
+    font-size: 34px;
 }
+
+.form-container{
+    margin-top: 60px;
+}
+
+hr{
+    border: 5px;
+    margin-bottom: 20px;
+    border-top:5px solid black;
+}
+
+

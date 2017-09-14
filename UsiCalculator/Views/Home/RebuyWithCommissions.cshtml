@@ -2,6 +2,11 @@
 @{
     ViewBag.Title = "Home Page";
 
+    var weekCount = 0;
+    if (Model != null)
+    {
+        weekCount = Model.Values.Count() / 5;
+    }
 }
 
 @using (Html.BeginForm())
@@ -17,8 +22,13 @@
     if (Model != null)
     {
         <div class="col-sm-12">
-            <p>It will take you @Model.Values.Count() working days to achieve @Model.GoalPackages with a 100% rebuy</p>
+            <p>It will take you @Model.Values.Count() working days or @weekCount weeks</p>
+            <p> to achieve @Model.GoalPackages with a 100% rebuy</p>
         </div>
+        <div class="col-sm-3">Day</div>
+        <div class="col-sm-3">Packages</div>
+        <div class="col-sm-3">10% Comm</div>
+        <div class="col-sm-3">3% Comm</div>
         for (var i = 1; i <= Model.Values.Count; i++)
         {
             <div class="col-sm-3">@i</div>
